@@ -24,12 +24,12 @@ function processJSON( data ) {
         $('<tr/>', { "id" : this_row_id } ).appendTo('tbody');
         $('<td/>', { "text" : item.start } ).appendTo('#' + this_row_id);
         $('<td/>', { "text" : item.end } ).appendTo('#' + this_row_id);
-		$('<td/>', { "text" : item.count } ).appendTo('#' + this_row_id);
-		$('<td/>', { "text" : item.percent } ).appendTo('#' + this_row_id);
-		$('<td/>', { "text" : item.ratio } ).appendTo('#' + this_row_id);
-	}
+                $('<td/>', { "text" : item.count } ).appendTo('#' + this_row_id);
+                $('<td/>', { "text" : item.percent } ).appendTo('#' + this_row_id);
+                $('<td/>', { "text" : item.ratio } ).appendTo('#' + this_row_id);
+        }
 }
-
+	   
 $(document).ready( function() {
     $('#submit').click( function() {
         runSearch();
