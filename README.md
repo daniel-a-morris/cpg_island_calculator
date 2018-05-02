@@ -2,16 +2,22 @@
 INSTALLATION
 1. Download the codebase:
 
-```git clone https://github.com/ymgig/apcc_final.git```
+```
+git clone https://github.com/ymgig/apcc_final.git
+```
 
 2. Change directory to apcc_final:
 
-``` cd apcc_final```
+```
+cd apcc_final
+```
 
 3. Set permissions
 
-```chmod +rw -r ./
-chmod +x -r ./*.cgi```
+```
+chmod +rw -r ./
+chmod +x -r ./*.cgi
+```
 
 HOW TO USE
 1. Open search.html with a browser
