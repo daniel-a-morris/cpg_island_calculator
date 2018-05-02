@@ -21,7 +21,7 @@ chmod +x -r ./*.cgi
 
 HOW TO USE
 1. Open search.html with a browser
-2. Enter DNA sequence into text box
+2. Enter DNA sequence into text box (only the sequence!)
 3. Select options for frame size and O/E ratio (search Google for descriptions)
 4. Click submit
 NOTE: Overlap of predicted CpG islands occurs as the frame shifts right by 1 frame each iteration
