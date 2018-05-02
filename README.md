@@ -1,10 +1,19 @@
 # apcc_final
 INSTALLATION
-1. Download the codebase:
+
+This guide assumes that you have Apache HTTP server or the like.
+
+1a. Download the codebase:
 
 ```
 git clone https://github.com/ymgig/apcc_final.git
 ```
+
+=-=-
+ OR
+-=-=
+
+1b. Download and unzip using normal conventions for the type.
 
 2. Change directory to apcc_final:
 
