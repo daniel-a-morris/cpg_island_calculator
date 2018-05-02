@@ -17,39 +17,34 @@
     <h1>CpG Island Prediction</h1>
     <p> by Daniel Morris</p>
     <form name="cpg_dat" id="cpg_dat" action="">
-        <div>
-            <input name="dna_seq" id="dna_seq"  type="search" value="" autofocus="autofocus" placeholder="Enter FASTA DNA sequence"/>
-            <input name="submit" type="submit" id="submit" value="Submit"/>
-        </div>
-        <div>
-            <p>Frame size:</p>
-            <input type="radio" name="frame_size" value="100"/> 100 bp
-            <input type="radio" name="frame_size" value="200" checked/> 200 bp
-            <input type="radio" name="frame_size" value="500"/> 300 bp
-        </div>
-        <div>
-            <p>Observed/Expected:</p>
-            <input type="radio" name="oe_ratio" value="0.6" checked/> 0.60
-            <input type="radio" name="oe_ratio" value="0.65"/> 0.65
-        </div>
+        <input name="dna_seq" id="dna_seq"  type="text" value="" autofocus="autofocus" placeholder="Enter FASTA DNA sequence"/>
+        <input name="submit" type="submit" id="submit" value="Submit"/>
+        <p>Frame size:</p>
+        <input type="radio" name="frame_size" id="choice1" value="100"/> 100 bp
+        <input type="radio" name="frame_size" id="choice2" value="200" checked/> 200 bp
+        <input type="radio" name="frame_size" id="choice3" value="500"/> 300 bp
+        <p>Observed/Expected:</p>
+        <input type="radio" name="oe_ratio" id="choice4" value="60" checked/> 0.60
+        <input type="radio" name="oe_ratio" id="choice5" value="65"/> 0.65
     </form>
     <section id='results'>
         <p>
-            <span id='match_count'>0</span> match(es) found.
+            <span id='match_count'>0</span> possible island(s) found.
         </p>
         <table>
             <thead>
-                <tr>
-                    <td>Start (bp)</td>
-                    <td>End (bp)</td>
-                    <td>CpG count</td>
-                    <td>CG%</td>
-                    <td>O/E</td>
-                </tr>
+            <tr>
+                <td>Start (bp)</td>
+                <td>End (bp)</td>
+                <td>CpG count</td>
+                <td>CG%</td>
+                <td>O/E</td>
+            </tr>
             </thead>
             <tbody>
                 <!-- this will be filled in by javascript when there are results -->
             </tbody>
     </section>
+
 </body>
 </html>
