@@ -1,7 +1,6 @@
 function runSearch( term ) {
     $("#results").hide();
     $("tbody").empty();
-    //var frmStr = {dna_seq:$("#dna_seq").val(),frame_size:$("#frame_size").val(),oe_ratio:$("#oe_ratio").val()};
     var frmStr = $("form").serialize()
     $.ajax({
         url: "./search.cgi",
