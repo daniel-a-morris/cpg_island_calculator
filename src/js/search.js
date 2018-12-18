@@ -3,7 +3,7 @@ function runSearch( term ) {
     $("tbody").empty();
     var frmStr = $("form").serialize()
     $.ajax({
-        url: "./search.cgi",
+        url: "../search.cgi",
         dataType: "json",
         data: frmStr,
         success: function(data, textStatus, jqXHR) {
